@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -34,3 +34,18 @@ jobs:
         with:
           name: dx-dark-vsix
           path: dist/*.vsix
+
+      - name: Build Release ZIP
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+        run: |
+          cd dist
+          zip -9 dx-dark-vsix.zip dx-dark.vsix
+
+      - name: Upload Release Assets
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/dx-dark.vsix
+            dist/dx-dark-vsix.zip
+          generate_release_notes: true
