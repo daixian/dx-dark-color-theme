@@ -1,0 +1,36 @@
+name: Build VS Code Theme
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate Theme JSON
+        run: node -e "const fs=require('fs'); JSON.parse(fs.readFileSync('themes/dx-dark-color-theme.json','utf8')); console.log('Theme JSON is valid')"
+
+      - name: Build VSIX
+        run: |
+          mkdir -p dist
+          npx -y @vscode/vsce package --out dist/dx-dark.vsix
+
+      - name: Upload VSIX Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dx-dark-vsix
+          path: dist/*.vsix

@@ -1,0 +1,37 @@
+{
+  "name": "dx-dark-color-theme",
+  "displayName": "DX Dark Color Theme",
+  "description": "Visual Studio style dark color theme for C# development in VS Code",
+  "license": "GLWTPL",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark",
+    "visual-studio-style",
+    "csharp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:daixian/dx-dark-color-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daixian/dx-dark-color-theme/issues"
+  },
+  "homepage": "https://github.com/daixian/dx-dark-color-theme#readme",
+  "contributes": {
+    "themes": [
+      {
+        "label": "DX Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dx-dark-color-theme.json"
+      }
+    ]
+  }
+}
