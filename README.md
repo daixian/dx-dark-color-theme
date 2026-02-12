@@ -34,6 +34,21 @@ npx -y @vscode/vsce package
 - Rider 原始配色：`omake/dx_dark.icls`
 - 修改主题后可在开发窗口执行 `Developer: Reload Window` 快速预览
 
+### Token 命中排查（VS Code 内置工具）
+
+在 VS Code 里可以用内置调试工具查看某个符号到底命中了哪条主题规则。
+
+1. 把光标放到你想看的符号上（例如 `EmptySha256`）
+2. 按 `Ctrl+Shift+P` 打开命令面板
+3. 输入并执行 `Developer: Inspect Editor Tokens and Scopes`
+4. 查看弹出的悬浮面板
+
+重点关注：
+- `semantic token type`（例如 `variable` / `property` / `field`）
+- `modifiers`（例如 `readonly` / `static` / `declaration`）
+- `TextMate scopes`（语法 scope 列表）
+- 当前实际命中的主题规则
+
 ## CI 构建
 
 仓库已提供 GitHub Actions 工作流：`.github/workflows/ci.yml`
