@@ -183,6 +183,19 @@
       }
     },
     {
+      "name": "Operator",
+      "scope": [
+        "keyword.operator",
+        "keyword.operator.logical",
+        "keyword.operator.assignment",
+        "keyword.operator.logical.cs",
+        "keyword.operator.assignment.cs"
+      ],
+      "settings": {
+        "foreground": "#D4D4D4"
+      }
+    },
+    {
       "name": "String",
       "scope": [
         "string",
@@ -523,6 +536,7 @@
     "xmlDocCommentAttributeName": "#4C5C4C",
     "xmlDocCommentAttributeQuotes": "#4C5C4C",
     "keyword": "#499CD5",
+    "operator": "#D4D4D4",
     "string": "#CD9069",
     "number": "#B4CDA8",
     "constant": "#FFC66D",
