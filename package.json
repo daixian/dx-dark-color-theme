@@ -1,6 +1,7 @@
 {
   "name": "dx-dark-color-theme",
   "displayName": "DX Dark Color Theme",
+  "publisher": "daixian",
   "description": "Visual Studio style dark color theme for C# development in VS Code",
   "license": "GLWTPL",
   "version": "0.0.1",
