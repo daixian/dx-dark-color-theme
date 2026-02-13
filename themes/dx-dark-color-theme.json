@@ -240,11 +240,10 @@
     {
       "name": "Variable",
       "scope": [
-        "variable",
         "meta.definition.variable name"
       ],
       "settings": {
-        "foreground": "#94DBFD"
+        "foreground": "#D4D4D4"
       }
     },
     {
@@ -431,6 +430,25 @@
       }
     },
     {
+      "name": "C# Enum Member",
+      "scope": [
+        "variable.other.enummember"
+      ],
+      "settings": {
+        "foreground": "#FFC66D"
+      }
+    },
+    {
+      "name": "C# Local Variable (TextMate Fallback)",
+      "scope": [
+        "entity.name.variable.local.cs",
+        "variable.other.local.cs"
+      ],
+      "settings": {
+        "foreground": "#94DBFD"
+      }
+    },
+    {
       "name": "Regex",
       "scope": [
         "string.regexp",
@@ -527,15 +545,41 @@
         "foreground": "#4C5C4C"
       }
     }
+    ,
+    {
+      "name": "Preprocessor / Macro",
+      "scope": [
+        "keyword.preprocessor",
+        "meta.preprocessor",
+        "meta.preprocessor.cs",
+        "entity.name.function.preprocessor",
+        "punctuation.definition.preprocessor"
+      ],
+      "settings": {
+        "foreground": "#EC87EC"
+      }
+    },
+    {
+      "name": "C# Preprocessor Symbol",
+      "scope": [
+        "entity.name.variable.preprocessor.symbol.cs"
+      ],
+      "settings": {
+        "foreground": "#D4D4D4"
+      }
+    }
   ],
   "semanticTokenColors": {
     "comment": "#699856",
+    "excludedCode": "#6A6A6A",
+    "excludedCode:csharp": "#6A6A6A",
     "xmlDocCommentText": "#699856",
     "xmlDocCommentName": "#4C5C4C",
     "xmlDocCommentDelimiter": "#4C5C4C",
     "xmlDocCommentAttributeName": "#4C5C4C",
     "xmlDocCommentAttributeQuotes": "#4C5C4C",
     "keyword": "#499CD5",
+    "macro": "#EC87EC",
     "operator": "#D4D4D4",
     "string": "#CD9069",
     "number": "#B4CDA8",
@@ -563,7 +607,8 @@
       "foreground": "#D16969",
       "fontStyle": "bold"
     },
-    "variable": "#94DBFD",
+    "variable.readwrite": "#94DBFD",
+    "variable.readwrite:csharp": "#94DBFD",
     "variable.readonly:cs": "#FFC66D",
     "variable.readonly.declaration:cs": "#FFC66D",
     "variable.declaration.readonly:cs": "#FFC66D",
@@ -637,6 +682,8 @@
     "class": "#4EC8B0",
     "interface": "#3D8F7F",
     "enum": "#4EC8B0",
+    "enumMember": "#FFC66D",
+    "enumMember:csharp": "#FFC66D",
     "typeParameter": "#39C8B0",
     "decorator": "#39C8B0",
     "namespace": "#4EC8B0"
