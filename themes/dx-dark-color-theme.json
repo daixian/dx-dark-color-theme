@@ -480,9 +480,48 @@
         "fontStyle": "underline"
       }
     }
+    ,
+    {
+      "name": "Doc Comment Tags & Delimiters",
+      "scope": [
+        "entity.name.tag.localname.cs",
+        "entity.name.tag.cs",
+        "meta.tag.cs",
+        "comment.block.documentation punctuation.definition.tag",
+        "punctuation.definition.tag",
+        "comment.documentation.delimiter",
+        "comment.documentation.delimiter.cs",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#4C5C4C"
+      }
+    }
+    ,
+    {
+      "name": "Doc Comment Attributes & Quotes",
+      "scope": [
+        "entity.other.attribute-name.localname.cs",
+        "entity.other.attribute-name.cs",
+        "comment.block.documentation.cs entity.other.attribute-name",
+        "comment.block.documentation entity.other.attribute-name",
+        "punctuation.definition.string.begin.cs",
+        "punctuation.definition.string.end.cs",
+        "string.quoted.double.cs",
+        "comment.block.documentation string.quoted.double"
+      ],
+      "settings": {
+        "foreground": "#4C5C4C"
+      }
+    }
   ],
   "semanticTokenColors": {
     "comment": "#699856",
+    "xmlDocCommentText": "#699856",
+    "xmlDocCommentName": "#4C5C4C",
+    "xmlDocCommentDelimiter": "#4C5C4C",
+    "xmlDocCommentAttributeName": "#4C5C4C",
+    "xmlDocCommentAttributeQuotes": "#4C5C4C",
     "keyword": "#499CD5",
     "string": "#CD9069",
     "number": "#B4CDA8",
