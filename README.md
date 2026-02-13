@@ -6,7 +6,8 @@
 
 - Visual Studio 风格深色主题，视觉更贴近 C# 开发者常用配色习惯
 - 面向 C# 开发场景优化，已适配 VS Code `tokenColors` 与 `semanticTokenColors`
-- 对 C# 属性（property）做了突出显示（紫色 + 加粗）
+- 对 C# 属性（property）做了突出显示（紫色）
+- 对静态成员做了特殊处理（加粗）
 
 ## 安装与使用
 
