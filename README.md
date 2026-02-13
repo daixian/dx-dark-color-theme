@@ -68,6 +68,12 @@ npx -y @vscode/vsce package
 └─ package.json
 ```
 
+## 推荐字体
+主字体使用Source Code Pro,中文字体Fallback到微软雅黑
+```text
+'Source Code Pro','Microsoft YaHei','Consolas','Courier New',monospace
+```
+
 ## License
 
 This project is licensed under **GLWTPL**:  
