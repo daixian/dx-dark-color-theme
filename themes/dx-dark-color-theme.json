@@ -442,7 +442,9 @@
       "name": "C# Local Variable (TextMate Fallback)",
       "scope": [
         "entity.name.variable.local.cs",
-        "variable.other.local.cs"
+        "variable.other.local.cs",
+        "variable.other.readwrite.local.cs",
+        "variable.other.local"
       ],
       "settings": {
         "foreground": "#94DBFD"
@@ -607,8 +609,26 @@
       "foreground": "#D16969",
       "fontStyle": "bold"
     },
+    "variable": "#94DBFD",
+    "variable:cs": "#94DBFD",
+    "variable:csharp": "#94DBFD",
     "variable.readwrite": "#94DBFD",
     "variable.readwrite:csharp": "#94DBFD",
+    "variable.local": "#94DBFD",
+    "variable.local:cs": "#94DBFD",
+    "variable.local:csharp": "#94DBFD",
+    "variable.local.declaration": "#94DBFD",
+    "variable.local.declaration:cs": "#94DBFD",
+    "variable.local.declaration:csharp": "#94DBFD",
+    "variable.declaration.local": "#94DBFD",
+    "variable.declaration.local:cs": "#94DBFD",
+    "variable.declaration.local:csharp": "#94DBFD",
+    "local": "#94DBFD",
+    "local:cs": "#94DBFD",
+    "local:csharp": "#94DBFD",
+    "local.declaration": "#94DBFD",
+    "local.declaration:cs": "#94DBFD",
+    "local.declaration:csharp": "#94DBFD",
     "variable.readonly:cs": "#FFC66D",
     "variable.readonly.declaration:cs": "#FFC66D",
     "variable.declaration.readonly:cs": "#FFC66D",
