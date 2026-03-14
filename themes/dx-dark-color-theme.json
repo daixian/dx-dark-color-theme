@@ -196,6 +196,21 @@
       }
     },
     {
+      "name": "C++ Word Operators",
+      "scope": [
+        "keyword.operator.wordlike.cpp",
+        "keyword.operator.new.cpp",
+        "keyword.operator.delete.cpp",
+        "keyword.operator.cast.static_cast.cpp",
+        "keyword.operator.cast.dynamic_cast.cpp",
+        "keyword.operator.cast.const_cast.cpp",
+        "keyword.operator.cast.reinterpret_cast.cpp"
+      ],
+      "settings": {
+        "foreground": "#499CD5"
+      }
+    },
+    {
       "name": "String",
       "scope": [
         "string",
@@ -581,7 +596,10 @@
     "xmlDocCommentAttributeName": "#4C5C4C",
     "xmlDocCommentAttributeQuotes": "#4C5C4C",
     "keyword": "#499CD5",
+    "keyword:cpp": "#499CD5",
+    "newOperator:cpp": "#499CD5",
     "macro": "#EC87EC",
+    "macro:cpp": "#BEB7FF",
     "operator": "#D4D4D4",
     "string": "#CD9069",
     "number": "#B4CDA8",
@@ -639,14 +657,20 @@
     "parameter": "#F49292",
     "property": "#B3A3D7",
     "property:cs": "#B3A3D7",
+    "property:cpp": "#D4D4D4",
     "property.readonly": "#B3A3D7",
     "property.readonly:cs": "#B3A3D7",
+    "property.readonly:cpp": "#D4D4D4",
     "property.static": {
       "foreground": "#B3A3D7",
       "fontStyle": "bold"
     },
     "property.static:cs": {
       "foreground": "#B3A3D7",
+      "fontStyle": "bold"
+    },
+    "property.static:cpp": {
+      "foreground": "#D4D4D4",
       "fontStyle": "bold"
     },
     "property.static.readonly": {
@@ -657,6 +681,10 @@
       "foreground": "#B3A3D7",
       "fontStyle": "bold"
     },
+    "property.static.readonly:cpp": {
+      "foreground": "#D4D4D4",
+      "fontStyle": "bold"
+    },
     "property.readonly.static": {
       "foreground": "#B3A3D7",
       "fontStyle": "bold"
@@ -665,8 +693,13 @@
       "foreground": "#B3A3D7",
       "fontStyle": "bold"
     },
+    "property.readonly.static:cpp": {
+      "foreground": "#D4D4D4",
+      "fontStyle": "bold"
+    },
     "property.declaration": "#B3A3D7",
     "property.declaration:cs": "#B3A3D7",
+    "property.declaration:cpp": "#D4D4D4",
     "field": "#D4D4D4",
     "field:cs": "#D4D4D4",
     "field.declaration": "#D4D4D4",
@@ -703,6 +736,7 @@
     "interface": "#3D8F7F",
     "enum": "#4EC8B0",
     "enumMember": "#FFC66D",
+    "enumMember:cpp": "#B8D7A3",
     "enumMember:csharp": "#FFC66D",
     "typeParameter": "#39C8B0",
     "decorator": "#39C8B0",
