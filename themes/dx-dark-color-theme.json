@@ -183,6 +183,15 @@
       }
     },
     {
+      "name": "C++ Control Keywords",
+      "scope": [
+        "source.cpp keyword.control"
+      ],
+      "settings": {
+        "foreground": "#D8A0DF"
+      }
+    },
+    {
       "name": "Operator",
       "scope": [
         "keyword.operator",
@@ -597,6 +606,7 @@
     "xmlDocCommentAttributeQuotes": "#4C5C4C",
     "keyword": "#499CD5",
     "keyword:cpp": "#499CD5",
+    "keyword.control:cpp": "#D8A0DF",
     "newOperator:cpp": "#499CD5",
     "macro": "#EC87EC",
     "macro:cpp": "#BEB7FF",
