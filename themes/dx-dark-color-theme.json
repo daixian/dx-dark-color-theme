@@ -161,6 +161,18 @@
       }
     },
     {
+      "name": "Doxygen Tags",
+      "scope": [
+        "storage.type.class.doxygen",
+        "storage.type.class.doxygen.cpp",
+        "comment.block.documentation storage.type.class.doxygen",
+        "comment.block.documentation.cpp storage.type.class.doxygen.cpp"
+      ],
+      "settings": {
+        "foreground": "#7FBFB3"
+      }
+    },
+    {
       "name": "Doc Tags",
       "scope": [
         "storage.type.class.jsdoc",

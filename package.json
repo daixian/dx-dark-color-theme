@@ -4,7 +4,7 @@
   "publisher": "daixian",
   "description": "Visual Studio style dark color theme for C# development in VS Code",
   "license": "GLWTPL",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.109.0"
   },
